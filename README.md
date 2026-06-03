@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JC Soluciones Energéticas — Sitio web
 
-## Getting Started
+Sitio web para el emprendimiento de instalaciones solares para **camper trailers** y **viviendas off-grid**.
+Construido con **Next.js 16 + Tailwind CSS v4 + shadcn/ui**. Todo el contacto se canaliza a **WhatsApp**.
 
-First, run the development server:
+---
+
+## 🚀 Cómo correrlo en tu computador
+
+Necesitas tener **Node.js** instalado (versión 20 o superior).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install      # instala las dependencias (solo la primera vez)
+npm run dev      # arranca el sitio en modo desarrollo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Luego abre **http://localhost:3000** en tu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Otros comandos:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build    # genera la versión de producción (verifica que todo compila)
+npm run start    # corre la versión de producción ya compilada
+npm run lint     # revisa el código
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✏️ Cómo editar el contenido (lo más importante)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Todo el texto, el número de WhatsApp, el Facebook y las fotos se editan en UN SOLO archivo:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> `src/content/site.ts`
 
-## Deploy on Vercel
+Ahí puedes cambiar:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Qué | Dónde en `site.ts` |
+|-----|--------------------|
+| Número de WhatsApp | `whatsapp` (solo dígitos con código de país, ej: `573001234567`) |
+| Mensaje que el cliente envía | `whatsappMensaje` |
+| Enlace de Facebook | `facebookUrl` |
+| Ciudad / zona de cobertura | `ciudad` |
+| Textos del inicio | `hero` |
+| Servicios | `servicios` |
+| Razones para confiar | `confianza` |
+| Texto "Sobre nosotros" | `sobreNosotros` |
+| Fotos de la galería | `galeria` |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> ⚠️ **Pendientes por reemplazar antes de publicar:**
+> 1. `whatsapp` → el número real de WhatsApp.
+> 2. `facebookUrl` → el enlace real de la página de Facebook.
+> 3. `url` → el dominio final del sitio (lo da Vercel al desplegar).
+> 4. Las fotos de la galería (ver abajo).
+
+---
+
+## 🖼️ Cómo cambiar las fotos de los proyectos
+
+Las fotos están en la carpeta `public/proyectos/`. Por ahora hay imágenes de ejemplo (`1.svg` … `6.svg`).
+
+Para poner fotos reales (las de la página de Facebook):
+
+1. Copia tus fotos (`.jpg` o `.png`) dentro de `public/proyectos/`.
+   Ejemplo: `public/proyectos/instalacion-finca.jpg`
+2. Abre `src/content/site.ts` y en la lista `galeria` apunta a tus archivos:
+
+```ts
+galeria: [
+  { src: "/proyectos/instalacion-finca.jpg", alt: "Instalación solar en finca" },
+  { src: "/proyectos/camper-juan.jpg",       alt: "Sistema solar en camper" },
+  // ...agrega todas las que quieras
+],
+```
+
+Puedes poner tantas fotos como desees. La galería se ajusta sola.
+
+---
+
+## ☁️ Cómo publicarlo gratis en Vercel
+
+1. Sube este proyecto a un repositorio de **GitHub**.
+2. Entra a **https://vercel.com** y crea una cuenta (puedes usar tu cuenta de GitHub).
+3. Haz clic en **"Add New… → Project"** e importa el repositorio.
+4. Vercel detecta Next.js automáticamente. Solo dale **Deploy**.
+5. En segundos tendrás una URL pública (ej: `https://jc-soluciones-energeticas.vercel.app`).
+6. Copia esa URL y pégala en `src/content/site.ts` en el campo `url`.
+
+Cada vez que hagas un cambio y lo subas a GitHub, Vercel actualiza el sitio solo.
+
+---
+
+## 🎨 Identidad visual
+
+- **Colores:** azul cielo (energía), amarillo sol y verde (medio ambiente).
+- **Logo:** `public/logo.svg` (también usado como ícono del navegador y al compartir el link).
+  Si más adelante tienen un logo propio, reemplaza ese archivo.
+
+## 📁 Estructura del proyecto
+
+```
+src/
+├── app/
+│   ├── layout.tsx      # estructura global, SEO, navbar/footer
+│   ├── page.tsx        # arma las secciones en orden
+│   └── globals.css     # paleta de colores y estilos base
+├── components/         # cada sección del sitio (hero, servicios, galería...)
+└── content/
+    └── site.ts         # 👈 TODO el contenido editable
+public/
+├── logo.svg            # logo de la marca
+└── proyectos/          # fotos de la galería
+```
