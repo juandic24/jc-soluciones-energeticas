@@ -51,8 +51,8 @@ export const site = {
     subtitulo:
       "Diseñamos e instalamos sistemas solares a tu medida: independízate de la red eléctrica con energía limpia, silenciosa y confiable.",
     bullets: [
+      "Sistemas off-grid para fincas y viviendas", 
       "Instalaciones para camper trailers y vehículos",
-      "Sistemas off-grid para fincas y viviendas",
       "Asesoría honesta y trabajo garantizado",
     ],
   },
