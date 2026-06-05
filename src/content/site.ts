@@ -60,16 +60,16 @@ export const site = {
   // ── Servicios ─────────────────────────────────────────────────────
   servicios: [
     {
-      icono: Caravan,
-      titulo: "Instalaciones para camper & trailers",
-      descripcion:
-        "Paneles, baterías e inversores optimizados para el espacio y consumo de tu camper o vehículo. Viaja con energía donde quieras, sin depender de enchufes.",
-    },
-    {
       icono: Home,
       titulo: "Sistemas off-grid para viviendas",
       descripcion:
         "Soluciones solares completas para fincas y casas alejadas de la red. Dimensionamos el sistema según tus necesidades reales de consumo.",
+    },
+    {
+      icono: Caravan,
+      titulo: "Instalaciones para camper & trailers",
+      descripcion:
+        "Paneles, baterías e inversores optimizados para el espacio y consumo de tu camper o vehículo. Viaja con energía donde quieras, sin depender de enchufes.",
     },
     {
       icono: BatteryCharging,
