@@ -29,14 +29,14 @@ export const site = {
   // ── Datos del negocio ─────────────────────────────────────────────
   nombre: "JC Soluciones Energéticas",
   nombreCorto: "JC",
-  tagline: "Energía solar para tu camper y tu hogar off-grid",
+  tagline: "Energía solar para tu hogar y tu camper off-grid",
   descripcion:
-    "Instalaciones de energía solar para camper trailers y viviendas off-grid. Sistemas confiables, trabajo documentado y acompañamiento de principio a fin.",
+    "Instalaciones de energía solar para viviendas y campers trailers off-grid. Sistemas confiables, trabajo documentado y acompañamiento de principio a fin.",
 
   // ── Contacto ──────────────────────────────────────────────────────
   // Número con código de país, SOLO dígitos (sin +, espacios ni guiones).
   // Ejemplo Colombia: "573001234567"
-  whatsapp: "573000000000",
+  whatsapp: "-",
   whatsappMensaje:
     "¡Hola! Vi su página web y me interesa una instalación solar. ¿Me pueden dar más información?",
   facebookUrl: "https://www.facebook.com/profile.php?id=100070740626693",
@@ -47,7 +47,7 @@ export const site = {
 
   // ── Hero (portada) ────────────────────────────────────────────────
   hero: {
-    titulo: "Energía solar para tu camper y tu hogar off-grid",
+    titulo: "Energía solar para tu hogar y tu camper off-grid",
     subtitulo:
       "Diseñamos e instalamos sistemas solares a tu medida: independízate de la red eléctrica con energía limpia, silenciosa y confiable.",
     bullets: [
@@ -112,7 +112,7 @@ export const site = {
     titulo: "Sobre nosotros",
     parrafos: [
       "JC Soluciones Energéticas nace de la pasión por la energía limpia y el deseo de ayudar a las personas a ser independientes energéticamente.",
-      "Nos especializamos en instalaciones solares para camper trailers y viviendas off-grid, llevando energía confiable a lugares donde la red eléctrica no llega.",
+      "Nos especializamos en instalaciones solares para viviendas y campers off-grid, llevando energía confiable a lugares donde la red eléctrica no llega.",
       "Creemos en el trabajo bien hecho, en la honestidad con cada cliente y en el cuidado del medio ambiente. Por eso documentamos cada proyecto y acompañamos a nuestros clientes en todo el proceso.",
     ],
     icono: Leaf,
