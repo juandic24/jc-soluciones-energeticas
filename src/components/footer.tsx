@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white">
+    <footer className="border-t border-cream-200 bg-cream-50">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-10 sm:flex-row sm:justify-between sm:px-6">
         <Logo />
 
@@ -13,7 +13,7 @@ export function Footer() {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-slate-500 transition-colors hover:text-sky-700"
+              className="text-sm text-navy-500 transition-colors hover:text-navy-900"
             >
               {item.label}
             </a>
@@ -25,14 +25,14 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
-          className="flex size-10 items-center justify-center rounded-full bg-sky-50 text-sky-700 transition-colors hover:bg-sky-100"
+          className="flex size-10 items-center justify-center rounded-full bg-navy-900 text-cream-50 transition-colors hover:bg-navy-700"
         >
           <FacebookIcon className="size-5" />
         </a>
       </div>
 
-      <div className="border-t border-slate-100 py-5">
-        <p className="text-center text-sm text-slate-400">
+      <div className="border-t border-cream-200 py-5">
+        <p className="text-center text-sm text-navy-500">
           © {new Date().getFullYear()} {site.nombre}. Energía limpia para todos.
         </p>
       </div>

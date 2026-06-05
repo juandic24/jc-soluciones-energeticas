@@ -11,7 +11,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-sky-100 bg-white/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-cream-200 bg-cream-50/85 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#inicio" aria-label={site.nombre}>
           <Logo />
@@ -23,7 +23,7 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-md px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-sky-50 hover:text-sky-700"
+              className="rounded-md px-3 py-2 text-sm font-medium text-navy-600 transition-colors hover:bg-cream-200 hover:text-navy-900"
             >
               {item.label}
             </a>
@@ -38,7 +38,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-md p-2 text-slate-700 hover:bg-sky-50 lg:hidden"
+          className="rounded-md p-2 text-navy-700 hover:bg-cream-200 lg:hidden"
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={open}
         >
@@ -49,7 +49,7 @@ export function Navbar() {
       {/* Menú móvil desplegable */}
       <div
         className={cn(
-          "overflow-hidden border-t border-sky-100 bg-white transition-[max-height] duration-300 ease-in-out lg:hidden",
+          "overflow-hidden border-t border-cream-200 bg-cream-50 transition-[max-height] duration-300 ease-in-out lg:hidden",
           open ? "max-h-96" : "max-h-0",
         )}
       >
@@ -59,7 +59,7 @@ export function Navbar() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-2.5 text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-700"
+              className="rounded-md px-3 py-2.5 text-base font-medium text-navy-700 hover:bg-cream-200 hover:text-navy-900"
             >
               {item.label}
             </a>

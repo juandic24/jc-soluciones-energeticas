@@ -5,9 +5,9 @@
 <line x1="54" y1="12" x2="49" y2="7" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round"/>
 <line x1="78" y1="12" x2="83" y2="7" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round"/>
 <line x1="84" y1="24" x2="91" y2="24" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round"/>
-<rect x="4" y="22" width="64" height="58" rx="6" fill="#102A43"/>
-<line x1="25.3" y1="22" x2="25.3" y2="80" stroke="#F59E0B" stroke-width="2.2"/>
-<line x1="46.7" y1="22" x2="46.7" y2="80" stroke="#F59E0B" stroke-width="2.2"/>
-<line x1="4" y1="51" x2="68" y2="51" stroke="#F59E0B" stroke-width="2.2"/>
+<rect x="4" y="22" width="64" height="58" rx="6" fill="#F6F1E7"/>
+<line x1="25.3" y1="22" x2="25.3" y2="80" stroke="#102A43" stroke-width="2.2"/>
+<line x1="46.7" y1="22" x2="46.7" y2="80" stroke="#102A43" stroke-width="2.2"/>
+<line x1="4" y1="51" x2="68" y2="51" stroke="#102A43" stroke-width="2.2"/>
 </g>
 </svg>

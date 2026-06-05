@@ -35,16 +35,16 @@ export function Galeria() {
   }, [activo, cerrar, anterior, siguiente]);
 
   return (
-    <section id="galeria" className="bg-slate-50 py-20 sm:py-28">
+    <section id="galeria" className="bg-cream-100 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-wider text-sky-600">
+          <span className="text-sm font-semibold uppercase tracking-wider text-amber-600">
             Nuestros proyectos
           </span>
-          <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
             Trabajo real, resultados reales
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="mt-4 text-lg text-navy-700">
             Una muestra de instalaciones que hemos realizado. Cada proyecto es una
             historia de energía independiente.
           </p>
@@ -56,7 +56,7 @@ export function Galeria() {
               key={foto.src}
               type="button"
               onClick={() => setActivo(i)}
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-slate-200 shadow-sm ring-1 ring-slate-900/5 transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+              className="group relative aspect-[4/3] overflow-hidden rounded-2xl bg-cream-200 shadow-sm ring-1 ring-navy-900/5 transition-all hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
               aria-label={`Ampliar: ${foto.alt}`}
             >
               <Image
@@ -66,7 +66,7 @@ export function Galeria() {
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <span className="absolute inset-0 bg-sky-950/0 transition-colors group-hover:bg-sky-950/10" />
+              <span className="absolute inset-0 bg-navy-900/0 transition-colors group-hover:bg-navy-900/10" />
             </button>
           ))}
         </div>

@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { site } from "@/content/site";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { WhatsappFloat } from "@/components/whatsapp-float";
 
-const geistSans = Geist({
+// Tipografía oficial de marca (ver .design/fonts.md)
+const poppins = Poppins({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -47,8 +49,8 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="es" className={`${geistSans.variable} antialiased`}>
-      <body className="flex min-h-screen flex-col bg-white text-slate-800">
+    <html lang="es" className={`${poppins.variable} antialiased`}>
+      <body className="flex min-h-screen flex-col bg-cream-100 text-navy-800">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
