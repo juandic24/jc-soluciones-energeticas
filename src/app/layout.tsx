@@ -44,7 +44,7 @@ export default function RootLayout({
     name: site.nombre,
     description: site.descripcion,
     areaServed: site.ciudad,
-    sameAs: [site.facebookUrl],
+    sameAs: [site.facebookUrl, site.instagramUrl],
     telephone: `+${site.whatsapp}`,
   };
 

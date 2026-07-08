@@ -9,6 +9,7 @@
  *  PENDIENTES (reemplazar los valores de ejemplo):
  *   1. whatsapp        -> número real con código de país, solo dígitos.
  *   2. facebookUrl     -> enlace real de la página de Facebook.
+ *      instagramUrl   -> enlace real del perfil de Instagram.
  *   3. galeria         -> fotos reales en /public/proyectos/ (ver instrucciones).
  * ───────────────────────────────────────────────────────────────────────────
  */
@@ -40,6 +41,7 @@ export const site = {
   whatsappMensaje:
     "¡Hola! Vi su página web y me interesa una instalación solar. ¿Me pueden dar más información?",
   facebookUrl: "https://www.facebook.com/profile.php?id=61591786560927",
+  instagramUrl: "https://www.instagram.com/jcsolucionesenergeticas/",
     email: "jcsolucionesenergeticas@gmail.com", // opcional; déjalo vacío si no quieres mostrarlo
   ciudad: "Colombia", // zona de cobertura mostrada en el sitio
   // URL pública del sitio (actualízala con tu dominio real de Vercel).

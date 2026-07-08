@@ -1,4 +1,4 @@
-import { FacebookIcon } from "@/components/icons";
+import { FacebookIcon, InstagramIcon } from "@/components/icons";
 import { Logo } from "@/components/logo";
 import { site } from "@/content/site";
 
@@ -20,15 +20,26 @@ export function Footer() {
           ))}
         </nav>
 
-        <a
-          href={site.facebookUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-          className="flex size-10 items-center justify-center rounded-full bg-navy-900 text-cream-50 transition-colors hover:bg-navy-700"
-        >
-          <FacebookIcon className="size-5" />
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={site.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="flex size-10 items-center justify-center rounded-full bg-navy-900 text-cream-50 transition-colors hover:bg-navy-700"
+          >
+            <FacebookIcon className="size-5" />
+          </a>
+          <a
+            href={site.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="flex size-10 items-center justify-center rounded-full bg-navy-900 text-cream-50 transition-colors hover:bg-navy-700"
+          >
+            <InstagramIcon className="size-5" />
+          </a>
+        </div>
       </div>
 
       <div className="border-t border-cream-200 py-5">

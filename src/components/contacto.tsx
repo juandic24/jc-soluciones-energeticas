@@ -1,6 +1,6 @@
 import { Mail, MapPin } from "lucide-react";
 import { WhatsappButton } from "@/components/whatsapp-button";
-import { FacebookIcon } from "@/components/icons";
+import { FacebookIcon, InstagramIcon } from "@/components/icons";
 import { site } from "@/content/site";
 
 export function Contacto() {
@@ -24,8 +24,8 @@ export function Contacto() {
           </WhatsappButton>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-center gap-4 text-navy-200 sm:flex-row sm:gap-8">
-          <span className="inline-flex items-center gap-2">
+        <div className="mt-12 flex flex-col flex-wrap items-center justify-center gap-4 text-navy-200 sm:flex-row sm:gap-x-8 sm:gap-y-4">
+          <span className="inline-flex items-center gap-2 whitespace-nowrap">
             <MapPin className="size-5 text-amber-400" />
             {site.ciudad}
           </span>
@@ -33,15 +33,24 @@ export function Contacto() {
             href={site.facebookUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 transition-colors hover:text-cream-50"
+            className="inline-flex items-center gap-2 whitespace-nowrap transition-colors hover:text-cream-50"
           >
             <FacebookIcon className="size-5 text-amber-400" />
-            Síguenos en Facebook
+            Facebook
+          </a>
+          <a
+            href={site.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 whitespace-nowrap transition-colors hover:text-cream-50"
+          >
+            <InstagramIcon className="size-5 text-amber-400" />
+            Instagram
           </a>
           {site.email && (
             <a
               href={`mailto:${site.email}`}
-              className="inline-flex items-center gap-2 transition-colors hover:text-cream-50"
+              className="inline-flex items-center gap-2 whitespace-nowrap transition-colors hover:text-cream-50"
             >
               <Mail className="size-5 text-amber-400" />
               {site.email}
