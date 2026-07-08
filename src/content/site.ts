@@ -39,7 +39,7 @@ export const site = {
   whatsapp: "573004792271",
   whatsappMensaje:
     "¡Hola! Vi su página web y me interesa una instalación solar. ¿Me pueden dar más información?",
-  facebookUrl: "https://www.facebook.com/profile.php?id=100070740626693",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61591786560927",
     email: "jcsolucionesenergeticas@gmail.com", // opcional; déjalo vacío si no quieres mostrarlo
   ciudad: "Colombia", // zona de cobertura mostrada en el sitio
   // URL pública del sitio (actualízala con tu dominio real de Vercel).
