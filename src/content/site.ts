@@ -36,7 +36,7 @@ export const site = {
   // ── Contacto ──────────────────────────────────────────────────────
   // Número con código de país, SOLO dígitos (sin +, espacios ni guiones).
   // Ejemplo Colombia: "573001234567"
-  whatsapp: "-",
+  whatsapp: "573004792271",
   whatsappMensaje:
     "¡Hola! Vi su página web y me interesa una instalación solar. ¿Me pueden dar más información?",
   facebookUrl: "https://www.facebook.com/profile.php?id=100070740626693",
